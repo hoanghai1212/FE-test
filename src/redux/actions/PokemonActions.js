@@ -4,7 +4,7 @@ import { FETCH_POKEMON, LOAD_MORE, SEARCH } from "./types/PokemonTypes";
 export const fetchPokemon = () => (dispatch) => {
   axios
     .get(
-      "https://thingproxy.freeboard.io/fetch/https://www.pokemon.com/us/api/pokedex/kalos",
+      "https://www.pokemon.com/us/api/pokedex/kalos",
       { headers: { Accept: "application/json" } }
     )
     .then((res) => {
