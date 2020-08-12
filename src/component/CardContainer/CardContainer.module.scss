@@ -1,0 +1,85 @@
+.CardContainer {
+  background: #fff url(../../assests/img/container_bg.png);
+
+  &__Wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: flex-end;
+    align-items: center;
+
+    background: #fff;
+    margin: 0 10%;
+    padding: 32px 20px;
+    min-height: 300px;
+
+    & > img {
+      margin: 0 auto;
+      width: 50px;
+      height: 50px;
+      animation: spin 0.5s infinite linear;
+    }
+  }
+
+  &__Button {
+    flex-basis: 100%;
+    text-align: center;
+
+    button {
+      color: #fff;
+      font-weight: 600;
+      font-size: 14px;
+
+      padding: 12px 20px 10px;
+      margin: 16px;
+      background-color: #30a7d7;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #1b82b1;
+      }
+    }
+  }
+
+  &__NoPokemon {
+    width: 100%;
+    border: 2px solid #e3350d;
+    border-radius: 10px;
+
+    font-size: 16px;
+    color: #919191;
+
+    p {
+      margin: 10px 20px;
+
+      color: #e3350d;
+      font-size: 20px;
+    }
+
+    span {
+      margin: 10px 20px;
+
+      font-weight: bold;
+    }
+
+    ul {
+      padding-left: 34px;
+      margin-bottom: 0;
+      
+      text-indent: 16px;
+      li {
+        margin: 8px 0;
+      }
+    }
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
