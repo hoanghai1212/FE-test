@@ -3,11 +3,20 @@
   background-color: #313131;
   padding: 24px 10% 16px;
 
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+
   &__Left {
     color: #ffffff;
 
     padding-left: 20px;
     width: 50%;
+
+    @media screen and (max-width: 768px) {
+      padding-left: 10px;
+      width: 100%;
+    }
   }
 
   &__Title {
@@ -48,6 +57,10 @@
 
   &__Right {
     width: 50%;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
   }
 
   &__Instructions {
@@ -59,5 +72,12 @@
     border-radius: 5px;
     background-color: #4dad5b;
     transition: background-color 0.1s linear;
+
+    @media screen and (max-width: 768px) {
+      margin: 10px;
+
+      font-size: 18px;
+      line-height: 1.2;
+    }
   }
 }
