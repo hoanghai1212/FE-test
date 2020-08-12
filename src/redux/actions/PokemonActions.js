@@ -3,12 +3,14 @@ import { FETCH_POKEMON, LOAD_MORE, SEARCH } from "./types/PokemonTypes";
 
 export const fetchPokemon = () => (dispatch) => {
   axios
-    .get("https://www.pokemon.com/us/api/pokedex/kalos", {
-      headers: {
-        Accept: "application/json",
-        "Access-control-allow-origin": "116.108.218.105",
-      },
-    })
+    .get(
+      "https://cors-anywhere.herokuapp.com/https://www.pokemon.com/us/api/pokedex/kalos",
+      {
+        headers: {
+          Accept: "application/json",
+        },
+      }
+    )
     .then((res) => {
       dispatch({
         type: FETCH_POKEMON,
