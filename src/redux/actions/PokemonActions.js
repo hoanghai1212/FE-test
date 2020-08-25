@@ -1,5 +1,5 @@
 import axios from "axios";
-import { FETCH_POKEMON, LOAD_MORE, SEARCH } from "./types/PokemonTypes";
+import { FETCH_POKEMON, LOAD_MORE, SEARCH } from "../types/PokemonTypes";
 
 export const fetchPokemon = () => (dispatch) => {
   axios
